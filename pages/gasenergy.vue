@@ -6,6 +6,16 @@
         </div>
     </div>
     <div class="row">
+        <div class="col-sm-12 d-flex justify-content-center mb-3">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active">
+                    <input type="radio" name="gasmeasure" id="gas-m3-opt" autocomplete="off" checked>m3</label>
+                <label class="btn btn-secondary">
+                    <input type="radio" name="gasmeasure" id="gas-cuft-opt" autocomplete="off">cuft3</label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-sm-12 d-flex justify-content-center">
             <form>
             <div class="form-group">
@@ -35,7 +45,7 @@
 
 <script>
 export default {
-    layout: 'testing',
+    layout: 'default',
     transition: 'test',
     methods: {
         doMaths: function() {
