@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section id="page">
     <div class="row text-center">
         <div class="col-sm-12 mb-3">
             <h1>Gas Consumption to killowatt-hours</h1>
@@ -70,9 +70,9 @@ export default {
     },
     computed: {
         gasKwh: function() {
-            if (this.selected = 'm3') {
-                return this.gasTot * this.confactor * this.gasCal / this.convFactor
-            } else if (this.selected = 'cuft') {
+            if (this.selected == 'm3') {
+                return this.gasTot * this.confactor * this.gasCal / this.convFactor;
+            } else {
                 return this.gasTot * this.cubic * this.confactor * this.gasCal / this.convFactor
             }
         },
@@ -84,17 +84,5 @@ export default {
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: grey;
-}
 
-#test {
-    text-align: center;
-}
 </style>
